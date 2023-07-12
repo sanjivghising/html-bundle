@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    animation: fadeIn 0.5s;
+  }
+  body {
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  .bear-grid {
+    --height: 320;
+    --width: 240;
+    display: grid;
+    grid-template-rows: repeat(var(--rows), 1fr);
+    grid-template-columns: repeat(var(--columns), 1fr);
+    height: calc(var(--height) * 1px);
+    transition: height 0.25s, width 0.25s;
+    width: calc(var(--width) * 1px);
+  }
+  @media (min-width: 768px) {
+    .bear-grid {
+      --height: 400;
+      --width: 300;
+    }
+  }
+  .bear-grid--fading .bear-grid__cell {
+    animation-play-state: running;
+    animation-name: driftAway;
+  }
+  .bear-grid__cell {
+    --cellWidth: calc((calc(var(--width) * -1px)) / var(--columns));
+    --cellHeight: calc((calc(var(--height) * -1px)) / var(--rows));
+    background: url("https://jh3y-bear-doesnt-feel-good.netlify.com/dontfeelgoodbear.svg");
+    background-size: calc(var(--width) * 1px) calc(var(--height) * 1px);
+    background-position: calc(var(--x) * var(--cellWidth)) calc(var(--y) * var(--cellHeight));
+    animation-delay: calc(var(--x) * 0.2s + 1s);
+    animation-fill-mode: backwards;
+    animation-duration: 4s;
+    animation-play-state: paused;
+    opacity: 0;
+    transform: translate(calc(var(--destinationX) * -1px), calc(var(--destinationY) * -1px)) rotate(calc(var(--rotation) * 1deg)) scale(0);
+  }
+  .replay {
+    animation: fadeIn 0.25s;
+    background: 0;
+    border: 0;
+    cursor: pointer;
+    display: none;
+    height: 44px;
+    left: 50%;
+    margin-left: -22px;
+    margin-top: -22px;
+    padding: 0;
+    position: fixed;
+    top: 50%;
+    width: 44px;
+    z-index: 2;
+  }
+  .replay:active {
+    transform: translateY(5%);
+  }
+  .replay--show {
+    display: block;
+  }
+  .replay__icon {
+    height: 44px;
+    width: 44px;
+  }
+  .replay__icon path {
+    fill: #fff;
+  }
+  @-moz-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  }
+  @-o-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  }
+  @-moz-keyframes driftAway {
+    from {
+      transform: translate(0, 0) rotate(0deg) scale(1);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes driftAway {
+    from {
+      transform: translate(0, 0) rotate(0deg) scale(1);
+      opacity: 1;
+    }
+  }
+  @-o-keyframes driftAway {
+    from {
+      transform: translate(0, 0) rotate(0deg) scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes driftAway {
+    from {
+      transform: translate(0, 0) rotate(0deg) scale(1);
+      opacity: 1;
+    }
+  }
+  

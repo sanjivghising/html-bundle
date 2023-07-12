@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="replay"><svg class="replay__icon" viewBox="0 0 24 24">
+        <path d="M17.65,6.35C16.2,4.9 14.21,4 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20C15.73,20 18.84,17.45 19.73,14H17.65C16.83,16.33 14.61,18 12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6C13.66,6 15.14,6.69 16.22,7.78L13,11H20V4L17.65,6.35Z"></path>
+    </svg></button>
+<div class="bear-grid" style="--cells: 300; --columns: 15; --rows: 20">
+    <div class="bear-grid__cell" style="--x: 0; --y: 0; --destinationY: 182; --destinationX: 91; --rotation: 103"></div>
+    <div class="bear-grid__cell" style="--x: 1; --y: 0; --destinationY: 74; --destinationX: 325; --rotation: 85"></div>
+    <div class="bear-grid__cell" style="--x: 2; --y: 0; --destinationY: 42; --destinationX: 54; --rotation: 220"></div>
+    <div class="bear-grid__cell" style="--x: 3; --y: 0; --destinationY: 251; --destinationX: 213; --rotation: 101"></div>
+    <div class="bear-grid__cell" style="--x: 4; --y: 0; --destinationY: 33; --destinationX: 223; --rotation: 78"></div>
+    <div class="bear-grid__cell" style="--x: 5; --y: 0; --destinationY: 304; --destinationX: 69; --rotation: 24"></div>
+    <div class="bear-grid__cell" style="--x: 6; --y: 0; --destinationY: 168; --destinationX: 115; --rotation: 7"></div>
+    <div class="bear-grid__cell" style="--x: 7; --y: 0; --destinationY: 168; --destinationX: 408; --rotation: 22"></div>
+    <div class="bear-grid__cell" style="--x: 8; --y: 0; --destinationY: 413; --destinationX: 494; --rotation: 147"></div>
+    <div class="bear-grid__cell" style="--x: 9; --y: 0; --destinationY: 185; --destinationX: 424; --rotation: 151"></div>
+    <div class="bear-grid__cell" style="--x: 10; --y: 0; --destinationY: 237; --destinationX: 92; --rotation: 143"></div>
+    <div class="bear-grid__cell" style="--x: 11; --y: 0; --destinationY: 218; --destinationX: 53; --rotation: 27"></div>
+    <div class="bear-grid__cell" style="--x: 12; --y: 0; --destinationY: 340; --destinationX: 108; --rotation: 324"></div>
+    <div class="bear-grid__cell" style="--x: 13; --y: 0; --destinationY: 337; --destinationX: 274; --rotation: 108"></div>
+    <div class="bear-grid__cell" style="--x: 14; --y: 0; --destinationY: 340; --destinationX: 87; --rotation: 88"></div>
+    <div class="bear-grid__cell" style="--x: 0; --y: 1; --destinationY: 61; --destinationX: 51; --rotation: 117"></div>
+    <div class="bear-grid__cell" style="--x: 1; --y: 1; --destinationY: 217; --destinationX: 260; --rotation: 15"></div>
+    <div class="bear-grid__cell" style="--x: 2; --y: 1; --destinationY: 339; --destinationX: 210; --rotation: 204"></div>
+    <div class="bear-grid__cell" style="--x: 3; --y: 1; --destinationY: 219; --destinationX: 79; --rotation: 128"></div>
+    <div class="bear-grid__cell" style="--x: 4; --y: 1; --destinationY: 495; --destinationX: 55; --rotation: 27"></div>
+    <div class="bear-grid__cell" style="--x: 5; --y: 1; --destinationY: 426; --destinationX: 104; --rotation: 117"></div>
+    <div class="bear-grid__cell" style="--x: 6; --y: 1; --destinationY: 379; --destinationX: 401; --rotation: 188"></div>
+    <div class="bear-grid__cell" style="--x: 7; --y: 1; --destinationY: 259; --destinationX: 178; --rotation: 121"></div>
+    <div class="bear-grid__cell" style="--x: 8; --y: 1; --destinationY: 137; --destinationX: 125; --rotation: 204"></div>
+    <div class="bear-grid__cell" style="--x: 9; --y: 1; --destinationY: 176; --destinationX: 427; --rotation: 281"></div>
+    <div class="bear-grid__cell" style="--x: 10; --y: 1; --destinationY: 323; --destinationX: 6; --rotation: 73"></div>
+    <div class="bear-grid__cell" style="--x: 11; --y: 1; --destinationY: 407; --destinationX: 330; --rotation: 91"></div>
+    <div class="bear-grid__cell" style="--x: 12; --y: 1; --destinationY: 162; --destinationX: 374; --rotation: 328"></div>
+    <div class="bear-grid__cell" style="--x: 13; --y: 1; --destinationY: 486; --destinationX: 438; --rotation: 344"></div>
+    <div class="bear-grid__cell" style="--x: 14; --y: 1; --destinationY: 101; --destinationX: 341; --rotation: 42"></div>
+    <div class="bear-grid__cell" style="--x: 0; --y: 2; --destinationY: 86; --destinationX: 246; --rotation: 84"></div>
+    <div class="bear-grid__cell" style="--x: 1; --y: 2; --destinationY: 479; --destinationX: 309; --rotation: 292"></div>
+    <div class="bear-grid__cell" style="--x: 2; --y: 2; --destinationY: 172; --destinationX: 217; --rotation: 280"></div>
+    <div class="bear-grid__cell" style="--x: 3; --y: 2; --destinationY: 348; --destinationX: 184; --rotation: 203"></div>
+    <div class="bear-grid__cell" style="--x: 4; --y: 2; --destinationY: 497; --destinationX: 26; --rotation: 259"></div>
+    <div class="bear-grid__cell" style="--x: 5; --y: 2; --destinationY: 86; --destinationX: 430; --rotation: 216"></div>
+    <div class="bear-grid__cell" style="--x: 6; --y: 2; --destinationY: 392; --destinationX: 274; --rotation: 185"></div>
+    <div class="bear-grid__cell" style="--x: 7; --y: 2; --destinationY: 114; --destinationX: 219; --rotation: 246"></div>
+    <div class="bear-grid__cell" style="--x: 8; --y: 2; --destinationY: 302; --destinationX: 123; --rotation: 336"></div>
+    <div class="bear-grid__cell" style="--x: 9; --y: 2; --destinationY: 154; --destinationX: 113; --rotation: 253"></div>
+    <div class="bear-grid__cell" style="--x: 10; --y: 2; --destinationY: 23; --destinationX: 245; --rotation: 23"></div>
+    <div class="bear-grid__cell" style="--x: 11; --y: 2; --destinationY: 91; --destinationX: 13; --rotation: 154"></div>
+    <div class="bear-grid__cell" style="--x: 12; --y: 2; --destinationY: 488; --destinationX: 466; --rotation: 295"></div>
+    <div class="bear-grid__cell" style="--x: 13; --y: 2; --destinationY: 302; --destinationX: 190; --rotation: 103"></div>
+    <div class="bear-grid__cell" style="--x: 14; --y: 2; --destinationY: 247; --destinationX: 61; --rotation: 339"></div>
+    <div class="bear-grid__cell" style="--x: 0; --y: 3; --destinationY: 410; --destinationX: 199; --rotation: 312"></div>
+    <div class="bear-grid__cell" style="--x: 1; --y: 3; --destinationY: 361; --destinationX: 407; --rotation: 29"></div>
+    <div class="bear-grid__cell" style="--x: 2; --y: 3; --destinationY: 219; --destinationX: 105; --rotation: 244"></div>
+    <div class="bear-grid__cell" style="--x: 3; --y: 3; --destinationY: 228; --destinationX: 76; --rotation: 224"></div>
+    <div class="bear-grid__cell" style="--x: 4; --y: 3; --destinationY: 102; --destinationX: 281; --rotation: 274"></div>
+    <div class="bear-grid__cell" style="--x: 5; --y: 3; --destinationY: 94; --destinationX: 287; --rotation: 68"></div>
+    <div class="bear-grid__cell" style="--x: 6; --y: 3; --destinationY: 445; --destinationX: 444; --rotation: 329"></div>
+    <div class="bear-grid__cell" style="--x: 7; --y: 3; --destinationY: 270; --destinationX: 175; --rotation: 258"></div>
+    <div class="bear-grid__cell" style="--x: 8; --y: 3; --destinationY: 110; --destinationX: 421; --rotation: 109"></div>
+    <div class="bear-grid__cell" style="--x: 9; --y: 3; --destinationY: 481; --destinationX: 150; --rotation: 243"></div>
+    <div class="bear-grid__cell" style="--x: 10; --y: 3; --destinationY: 73; --destinationX: 22; --rotation: 150"></div>
+    <div class="bear-grid__cell" style="--x: 11; --y: 3; --destinationY: 38; --destinationX: 82; --rotation: 30"></div>
+    <div class="bear-grid__cell" style="--x: 12; --y: 3; --destinationY: 236; --destinationX: 89; --rotation: 181"></div>
+    <div class="bear-grid__cell" style="--x: 13; --y: 3; --destinationY: 263; --destinationX: 122; --rotation: 110"></div>
+    <div class="bear-grid__cell" style="--x: 14; --y: 3; --destinationY: 117; --destinationX: 63; --rotation: 179"></div>
+    <div class="bear-grid__cell" style="--x: 0; --y: 4; --destinationY: 157; --destinationX: 311; --rotation: 150"></div>
+    <div class="bear-grid__cell" style="--x: 1; --y: 4; --destinationY: 442; --destinationX: 21; --rotation: 33"></div>
+    <div class="bear-grid__cell" style="--x: 2; --y: 4; --destinationY: 392; --destinationX: 79; --rotation: 136"></div>
+    <div class="bear-grid__cell" style="--x: 3; --y: 4; --destinationY: 251; --destinationX: 235; --rotation: 15"></div>
+    <div class="bear-grid__cell" style="--x: 4; --y: 4; --destinationY: 375; --destinationX: 21; --rotation: 157"></div>
+    <div class="bear-grid__cell" style="--x: 5; --y: 4; --destinationY: 350; --destinationX: 281; --rotation: 69"></div>
+    <div class="bear-grid__cell" style="--x: 6; --y: 4; --destinationY: 72; --destinationX: 28; --rotation: 277"></div>
+    <div class="bear-grid__cell" style="--x: 7; --y: 4; --destinationY: 20; --destinationX: 393; --rotation: 188"></div>
+    <div class="bear-grid__cell" style="--x: 8; --y: 4; --destinationY: 322; --destinationX: 374; --rotation: 137"></div>
+    <div class="bear-grid__cell" style="--x: 9; --y: 4; --destinationY: 161; --destinationX: 38; --rotation: 234"></div>
+    <div class="bear-grid__cell" style="--x: 10; --y: 4; --destinationY: 143; --destinationX: 460; --rotation: 198"></div>
+    <div class="bear-grid__cell" style="--x: 11; --y: 4; --destinationY: 418; --destinationX: 198; --rotation: 289"></div>
+    <div class="bear-grid__cell" style="--x: 12; --y: 4; --destinationY: 459; --destinationX: 290; --rotation: 296"></div>
+    <div class="bear-grid__cell" style="--x: 13; --y: 4; --destinationY: 362; --destinationX: 350; --rotation: 267"></div>
+    <div class="bear-grid__cell" style="--x: 14; --y: 4; --destinationY: 279; --destinationX: 178; --rotation: 315"></div>
+    <div class="bear-grid__cell" style="--x: 0; --y: 5; --destinationY: 58; --destinationX: 202; --rotation: 58"></div>
+    <div class="bear-grid__cell" style="--x: 1; --y: 5; --destinationY: 112; --destinationX: 312; --rotation: 58"></div>
+    <div class="bear-grid__cell" style="--x: 2; --y: 5; --destinationY: 419; --destinationX: 16; --rotation: 207"></div>
+    <div class="bear-grid__cell" style="--x: 3; --y: 5; --destinationY: 101; --destinationX: 368; --rotation: 206"></div>
+    <div class="bear-grid__cell" style="--x: 4; --y: 5; --destinationY: 4; --destinationX: 106; --rotation: 177"></div>
+    <div class="bear-grid__cell" style="--x: 5; --y: 5; --destinationY: 5; --destinationX: 355; --rotation: 146"></div>
+    <div class="bear-grid__cell" style="--x: 6; --y: 5; --destinationY: 185; --destinationX: 257; --rotation: 358"></div>
+    <div class="bear-grid__cell" style="--x: 7; --y: 5; --destinationY: 488; --destinationX: 273; --rotation: 61"></div>
+    <div class="bear-grid__cell" style="--x: 8; --y: 5; --destinationY: 169; --destinationX: 370; --rotation: 126"></div>
+    <div class="bear-grid__cell" style="--x: 9; --y: 5; --destinationY: 184; --destinationX: 405; --rotation: 69"></div>
+    <div class="bear-grid__cell" style="--x: 10; --y: 5; --destinationY: 441; --destinationX: 404; --rotation: 142"></div>
+    <div class="bear-grid__cell" style="--x: 11; --y: 5; --destinationY: 410; --destinationX: 146; --rotation: 176"></div>
+    <div class="bear-grid__cell" style="--x: 12; --y: 5; --destinationY: 405; --destinationX: 274; --rotation: 17"></div>
+    <div class="bear-grid__cell" style="--x: 13; --y: 5; --destinationY: 184; --destinationX: 336; --rotation: 127"></div>
+    <div class="bear-grid__cell" style="--x: 14; --y: 5; --destinationY: 208; --destinationX: 135; --rotation: 228"></div>
+    <div class="bear-grid__cell" style="--x: 0; --y: 6; --destinationY: 309; --destinationX: 79; --rotation: 263"></div>
+    <div class="bear-grid__cell" style="--x: 1; --y: 6; --destinationY: 385; --destinationX: 122; --rotation: 162"></div>
+    <div class="bear-grid__cell" style="--x: 2; --y: 6; --destinationY: 74; --destinationX: 77; --rotation: 334"></div>
+    <div class="bear-grid__cell" style="--x: 3; --y: 6; --destinationY: 241; --destinationX: 347; --rotation: 10"></div>
+    <div class="bear-grid__cell" style="--x: 4; --y: 6; --destinationY: 438; --destinationX: 277; --rotation: 327"></div>
+    <div class="bear-grid__cell" style="--x: 5; --y: 6; --destinationY: 158; --destinationX: 286; --rotation: 206"></div>
+    <div class="bear-grid__cell" style="--x: 6; --y: 6; --destinationY: 290; --destinationX: 24; --rotation: 165"></div>
+    <div class="bear-grid__cell" style="--x: 7; --y: 6; --destinationY: 391; --destinationX: 368; --rotation: 314"></div>
+    <div class="bear-grid__cell" style="--x: 8; --y: 6; --destinationY: 300; --destinationX: 46; --rotation: 266"></div>
+    <div class="bear-grid__cell" style="--x: 9; --y: 6; --destinationY: 299; --destinationX: 143; --rotation: 237"></div>
+    <div class="bear-grid__cell" style="--x: 10; --y: 6; --destinationY: 270; --destinationX: 407; --rotation: 70"></div>
+    <div class="bear-grid__cell" style="--x: 11; --y: 6; --destinationY: 285; --destinationX: 203; --rotation: 32"></div>
+    <div class="bear-grid__cell" style="--x: 12; --y: 6; --destinationY: 108; --destinationX: 338; --rotation: 209"></div>
+    <div class="bear-grid__cell" style="--x: 13; --y: 6; --destinationY: 118; --destinationX: 410; --rotation: 101"></div>
+    <div class="bear-grid__cell" style="--x: 14; --y: 6; --destinationY: 337; --destinationX: 378; --rotation: 101"></div>
+    <div class="bear-grid__cell" style="--x: 0; --y: 7; --destinationY: 198; --destinationX: 298; --rotation: 3"></div>
+    <div class="bear-grid__cell" style="--x: 1; --y: 7; --destinationY: 342; --destinationX: 76; --rotation: 74"></div>
+    <div class="bear-grid__cell" style="--x: 2; --y: 7; --destinationY: 304; --destinationX: 357; --rotation: 277"></div>
+    <div class="bear-grid__cell" style="--x: 3; --y: 7; --destinationY: 423; --destinationX: 434; --rotation: 61"></div>
+    <div class="bear-grid__cell" style="--x: 4; --y: 7; --destinationY: 220; --destinationX: 79; --rotation: 154"></div>
+    <div class="bear-grid__cell" style="--x: 5; --y: 7; --destinationY: 266; --destinationX: 471; --rotation: 230"></div>
+    <div class="bear-grid__cell" style="--x: 6; --y: 7; --destinationY: 265; --destinationX: 90; --rotation: 58"></div>
+    <div class="bear-grid__cell" style="--x: 7; --y: 7; --destinationY: 397; --destinationX: 124; --rotation: 38"></div>
+    <div class="bear-grid__cell" style="--x: 8; --y: 7; --destinationY: 209; --destinationX: 433; --rotation: 359"></div>
+    <div class="bear-grid__cell" style="--x: 9; --y: 7; --destinationY: 379; --destinationX: 245; --rotation: 227"></div>
+    <div class="bear-grid__cell" style="--x: 10; --y: 7; --destinationY: 278; --destinationX: 147; --rotation: 98"></div>
+    <div class="bear-grid__cell" style="--x: 11; --y: 7; --destinationY: 313; --destinationX: 113; --rotation: 246"></div>
+    <div class="bear-grid__cell" style="--x: 12; --y: 7; --destinationY: 449; --destinationX: 50; --rotation: 66"></div>
+    <div class="bear-grid__cell" style="--x: 13; --y: 7; --destinationY: 273; --destinationX: 44; --rotation: 268"></div>
+    <div class="bear-grid__cell" style="--x: 14; --y: 7; --destinationY: 310; --destinationX: 74; --rotation: 223"></div>
+    <div class="bear-grid__cell" style="--x: 0; --y: 8; --destinationY: 410; --destinationX: 422; --rotation: 117"></div>
+    <div class="bear-grid__cell" style="--x: 1; --y: 8; --destinationY: 446; --destinationX: 224; --rotation: 19"></div>
+    <div class="bear-grid__cell" style="--x: 2; --y: 8; --destinationY: 12; --destinationX: 391; --rotation: 231"></div>
+    <div class="bear-grid__cell" style="--x: 3; --y: 8; --destinationY: 36; --destinationX: 73; --rotation: 240"></div>
+    <div class="bear-grid__cell" style="--x: 4; --y: 8; --destinationY: 496; --destinationX: 467; --rotation: 25"></div>
+    <div class="bear-grid__cell" style="--x: 5; --y: 8; --destinationY: 303; --destinationX: 409; --rotation: 346"></div>
+    <div class="bear-grid__cell" style="--x: 6; --y: 8; --destinationY: 441; --destinationX: 345; --rotation: 303"></div>
+    <div class="bear-grid__cell" style="--x: 7; --y: 8; --destinationY: 322; --destinationX: 356; --rotation: 76"></div>
+    <div class="bear-grid__cell" style="--x: 8; --y: 8; --destinationY: 76; --destinationX: 2; --rotation: 159"></div>
+    <div class="bear-grid__cell" style="--x: 9; --y: 8; --destinationY: 153; --destinationX: 42; --rotation: 161"></div>
+    <div class="bear-grid__cell" style="--x: 10; --y: 8; --destinationY: 491; --destinationX: 277; --rotation: 164"></div>
+    <div class="bear-grid__cell" style="--x: 11; --y: 8; --destinationY: 71; --destinationX: 172; --rotation: 131"></div>
+    <div class="bear-grid__cell" style="--x: 12; --y: 8; --destinationY: 220; --destinationX: 15; --rotation: 246"></div>
+    <div class="bear-grid__cell" style="--x: 13; --y: 8; --destinationY: 34; --destinationX: 458; --rotation: 274"></div>
+    <div class="bear-grid__cell" style="--x: 14; --y: 8; --destinationY: 159; --destinationX: 374; --rotation: 215"></div>
+    <div class="bear-grid__cell" style="--x: 0; --y: 9; --destinationY: 419; --destinationX: 466; --rotation: 45"></div>
+    <div class="bear-grid__cell" style="--x: 1; --y: 9; --destinationY: 365; --destinationX: 249; --rotation: 98"></div>
+    <div class="bear-grid__cell" style="--x: 2; --y: 9; --destinationY: 287; --destinationX: 407; --rotation: 335"></div>
+    <div class="bear-grid__cell" style="--x: 3; --y: 9; --destinationY: 181; --destinationX: 393; --rotation: 115"></div>
+    <div class="bear-grid__cell" style="--x: 4; --y: 9; --destinationY: 34; --destinationX: 326; --rotation: 178"></div>
+    <div class="bear-grid__cell" style="--x: 5; --y: 9; --destinationY: 106; --destinationX: 173; --rotation: 189"></div>
+    <div class="bear-grid__cell" style="--x: 6; --y: 9; --destinationY: 207; --destinationX: 406; --rotation: 91"></div>
+    <div class="bear-grid__cell" style="--x: 7; --y: 9; --destinationY: 280; --destinationX: 287; --rotation: 227"></div>
+    <div class="bear-grid__cell" style="--x: 8; --y: 9; --destinationY: 350; --destinationX: 489; --rotation: 127"></div>
+    <div class="bear-grid__cell" style="--x: 9; --y: 9; --destinationY: 271; --destinationX: 181; --rotation: 330"></div>
+    <div class="bear-grid__cell" style="--x: 10; --y: 9; --destinationY: 279; --destinationX: 452; --rotation: 237"></div>
+    <div class="bear-grid__cell" style="--x: 11; --y: 9; --destinationY: 460; --destinationX: 265; --rotation: 325"></div>
+    <div class="bear-grid__cell" style="--x: 12; --y: 9; --destinationY: 288; --destinationX: 201; --rotation: 190"></div>
+    <div class="bear-grid__cell" style="--x: 13; --y: 9; --destinationY: 433; --destinationX: 496; --rotation: 212"></div>
+    <div class="bear-grid__cell" style="--x: 14; --y: 9; --destinationY: 138; --destinationX: 256; --rotation: 48"></div>
+    <div class="bear-grid__cell" style="--x: 0; --y: 10; --destinationY: 204; --destinationX: 384; --rotation: 194"></div>
+    <div class="bear-grid__cell" style="--x: 1; --y: 10; --destinationY: 145; --destinationX: 313; --rotation: 109"></div>
+    <div class="bear-grid__cell" style="--x: 2; --y: 10; --destinationY: 306; --destinationX: 214; --rotation: 137"></div>
+    <div class="bear-grid__cell" style="--x: 3; --y: 10; --destinationY: 122; --destinationX: 80; --rotation: 237"></div>
+    <div class="bear-grid__cell" style="--x: 4; --y: 10; --destinationY: 214; --destinationX: 225; --rotation: 323"></div>
+    <div class="bear-grid__cell" style="--x: 5; --y: 10; --destinationY: 209; --destinationX: 349; --rotation: 168"></div>
+    <div class="bear-grid__cell" style="--x: 6; --y: 10; --destinationY: 467; --destinationX: 179; --rotation: 146"></div>
+    <div class="bear-grid__cell" style="--x: 7; --y: 10; --destinationY: 347; --destinationX: 381; --rotation: 350"></div>
+    <div class="bear-grid__cell" style="--x: 8; --y: 10; --destinationY: 444; --destinationX: 399; --rotation: 303"></div>
+    <div class="bear-grid__cell" style="--x: 9; --y: 10; --destinationY: 176; --destinationX: 335; --rotation: 222"></div>
+    <div class="bear-grid__cell" style="--x: 10; --y: 10; --destinationY: 446; --destinationX: 360; --rotation: 277"></div>
+    <div class="bear-grid__cell" style="--x: 11; --y: 10; --destinationY: 67; --destinationX: 223; --rotation: 21"></div>
+    <div class="bear-grid__cell" style="--x: 12; --y: 10; --destinationY: 407; --destinationX: 198; --rotation: 160"></div>
+    <div class="bear-grid__cell" style="--x: 13; --y: 10; --destinationY: 76; --destinationX: 415; --rotation: 137"></div>
+    <div class="bear-grid__cell" style="--x: 14; --y: 10; --destinationY: 341; --destinationX: 184; --rotation: 341"></div>
+    <div class="bear-grid__cell" style="--x: 0; --y: 11; --destinationY: 120; --destinationX: 80; --rotation: 296"></div>
+    <div class="bear-grid__cell" style="--x: 1; --y: 11; --destinationY: 356; --destinationX: 438; --rotation: 79"></div>
+    <div class="bear-grid__cell" style="--x: 2; --y: 11; --destinationY: 359; --destinationX: 348; --rotation: 9"></div>
+    <div class="bear-grid__cell" style="--x: 3; --y: 11; --destinationY: 465; --destinationX: 395; --rotation: 269"></div>
+    <div class="bear-grid__cell" style="--x: 4; --y: 11; --destinationY: 462; --destinationX: 253; --rotation: 231"></div>
+    <div class="bear-grid__cell" style="--x: 5; --y: 11; --destinationY: 178; --destinationX: 484; --rotation: 256"></div>
+    <div class="bear-grid__cell" style="--x: 6; --y: 11; --destinationY: 494; --destinationX: 298; --rotation: 347"></div>
+    <div class="bear-grid__cell" style="--x: 7; --y: 11; --destinationY: 206; --destinationX: 94; --rotation: 252"></div>
+    <div class="bear-grid__cell" style="--x: 8; --y: 11; --destinationY: 177; --destinationX: 295; --rotation: 213"></div>
+    <div class="bear-grid__cell" style="--x: 9; --y: 11; --destinationY: 328; --destinationX: 326; --rotation: 149"></div>
+    <div class="bear-grid__cell" style="--x: 10; --y: 11; --destinationY: 16; --destinationX: 434; --rotation: 33"></div>
+    <div class="bear-grid__cell" style="--x: 11; --y: 11; --destinationY: 39; --destinationX: 75; --rotation: 267"></div>
+    <div class="bear-grid__cell" style="--x: 12; --y: 11; --destinationY: 37; --destinationX: 364; --rotation: 350"></div>
+    <div class="bear-grid__cell" style="--x: 13; --y: 11; --destinationY: 382; --destinationX: 118; --rotation: 267"></div>
+    <div class="bear-grid__cell" style="--x: 14; --y: 11; --destinationY: 135; --destinationX: 469; --rotation: 39"></div>
+    <div class="bear-grid__cell" style="--x: 0; --y: 12; --destinationY: 2; --destinationX: 474; --rotation: 266"></div>
+    <div class="bear-grid__cell" style="--x: 1; --y: 12; --destinationY: 216; --destinationX: 85; --rotation: 24"></div>
+    <div class="bear-grid__cell" style="--x: 2; --y: 12; --destinationY: 121; --destinationX: 187; --rotation: 45"></div>
+    <div class="bear-grid__cell" style="--x: 3; --y: 12; --destinationY: 54; --destinationX: 379; --rotation: 186"></div>
+    <div class="bear-grid__cell" style="--x: 4; --y: 12; --destinationY: 334; --destinationX: 254; --rotation: 89"></div>
+    <div class="bear-grid__cell" style="--x: 5; --y: 12; --destinationY: 353; --destinationX: 58; --rotation: 115"></div>
+    <div class="bear-grid__cell" style="--x: 6; --y: 12; --destinationY: 345; --destinationX: 405; --rotation: 315"></div>
+    <div class="bear-grid__cell" style="--x: 7; --y: 12; --destinationY: 80; --destinationX: 25; --rotation: 346"></div>
+    <div class="bear-grid__cell" style="--x: 8; --y: 12; --destinationY: 368; --destinationX: 286; --rotation: 142"></div>
+    <div class="bear-grid__cell" style="--x: 9; --y: 12; --destinationY: 153; --destinationX: 268; --rotation: 277"></div>
+    <div class="bear-grid__cell" style="--x: 10; --y: 12; --destinationY: 51; --destinationX: 214; --rotation: 129"></div>
+    <div class="bear-grid__cell" style="--x: 11; --y: 12; --destinationY: 92; --destinationX: 383; --rotation: 228"></div>
+    <div class="bear-grid__cell" style="--x: 12; --y: 12; --destinationY: 354; --destinationX: 197; --rotation: 183"></div>
+    <div class="bear-grid__cell" style="--x: 13; --y: 12; --destinationY: 209; --destinationX: 135; --rotation: 230"></div>
+    <div class="bear-grid__cell" style="--x: 14; --y: 12; --destinationY: 421; --destinationX: 456; --rotation: 349"></div>
+    <div class="bear-grid__cell" style="--x: 0; --y: 13; --destinationY: 414; --destinationX: 33; --rotation: 353"></div>
+    <div class="bear-grid__cell" style="--x: 1; --y: 13; --destinationY: 35; --destinationX: 76; --rotation: 178"></div>
+    <div class="bear-grid__cell" style="--x: 2; --y: 13; --destinationY: 190; --destinationX: 347; --rotation: 220"></div>
+    <div class="bear-grid__cell" style="--x: 3; --y: 13; --destinationY: 9; --destinationX: 487; --rotation: 27"></div>
+    <div class="bear-grid__cell" style="--x: 4; --y: 13; --destinationY: 163; --destinationX: 25; --rotation: 339"></div>
+    <div class="bear-grid__cell" style="--x: 5; --y: 13; --destinationY: 22; --destinationX: 380; --rotation: 354"></div>
+    <div class="bear-grid__cell" style="--x: 6; --y: 13; --destinationY: 129; --destinationX: 235; --rotation: 93"></div>
+    <div class="bear-grid__cell" style="--x: 7; --y: 13; --destinationY: 377; --destinationX: 436; --rotation: 106"></div>
+    <div class="bear-grid__cell" style="--x: 8; --y: 13; --destinationY: 70; --destinationX: 468; --rotation: 136"></div>
+    <div class="bear-grid__cell" style="--x: 9; --y: 13; --destinationY: 293; --destinationX: 326; --rotation: 83"></div>
+    <div class="bear-grid__cell" style="--x: 10; --y: 13; --destinationY: 423; --destinationX: 430; --rotation: 290"></div>
+    <div class="bear-grid__cell" style="--x: 11; --y: 13; --destinationY: 485; --destinationX: 484; --rotation: 222"></div>
+    <div class="bear-grid__cell" style="--x: 12; --y: 13; --destinationY: 51; --destinationX: 208; --rotation: 113"></div>
+    <div class="bear-grid__cell" style="--x: 13; --y: 13; --destinationY: 283; --destinationX: 399; --rotation: 100"></div>
+    <div class="bear-grid__cell" style="--x: 14; --y: 13; --destinationY: 422; --destinationX: 129; --rotation: 148"></div>
+    <div class="bear-grid__cell" style="--x: 0; --y: 14; --destinationY: 280; --destinationX: 190; --rotation: 206"></div>
+    <div class="bear-grid__cell" style="--x: 1; --y: 14; --destinationY: 408; --destinationX: 234; --rotation: 51"></div>
+    <div class="bear-grid__cell" style="--x: 2; --y: 14; --destinationY: 405; --destinationX: 71; --rotation: 89"></div>
+    <div class="bear-grid__cell" style="--x: 3; --y: 14; --destinationY: 57; --destinationX: 277; --rotation: 217"></div>
+    <div class="bear-grid__cell" style="--x: 4; --y: 14; --destinationY: 184; --destinationX: 214; --rotation: 301"></div>
+    <div class="bear-grid__cell" style="--x: 5; --y: 14; --destinationY: 178; --destinationX: 193; --rotation: 327"></div>
+    <div class="bear-grid__cell" style="--x: 6; --y: 14; --destinationY: 302; --destinationX: 106; --rotation: 248"></div>
+    <div class="bear-grid__cell" style="--x: 7; --y: 14; --destinationY: 129; --destinationX: 414; --rotation: 139"></div>
+    <div class="bear-grid__cell" style="--x: 8; --y: 14; --destinationY: 366; --destinationX: 121; --rotation: 38"></div>
+    <div class="bear-grid__cell" style="--x: 9; --y: 14; --destinationY: 146; --destinationX: 337; --rotation: 198"></div>
+    <div class="bear-grid__cell" style="--x: 10; --y: 14; --destinationY: 92; --destinationX: 241; --rotation: 359"></div>
+    <div class="bear-grid__cell" style="--x: 11; --y: 14; --destinationY: 64; --destinationX: 109; --rotation: 323"></div>
+    <div class="bear-grid__cell" style="--x: 12; --y: 14; --destinationY: 266; --destinationX: 19; --rotation: 162"></div>
+    <div class="bear-grid__cell" style="--x: 13; --y: 14; --destinationY: 86; --destinationX: 186; --rotation: 146"></div>
+    <div class="bear-grid__cell" style="--x: 14; --y: 14; --destinationY: 37; --destinationX: 480; --rotation: 6"></div>
+    <div class="bear-grid__cell" style="--x: 0; --y: 15; --destinationY: 297; --destinationX: 281; --rotation: 292"></div>
+    <div class="bear-grid__cell" style="--x: 1; --y: 15; --destinationY: 193; --destinationX: 372; --rotation: 74"></div>
+    <div class="bear-grid__cell" style="--x: 2; --y: 15; --destinationY: 293; --destinationX: 345; --rotation: 16"></div>
+    <div class="bear-grid__cell" style="--x: 3; --y: 15; --destinationY: 132; --destinationX: 377; --rotation: 135"></div>
+    <div class="bear-grid__cell" style="--x: 4; --y: 15; --destinationY: 77; --destinationX: 292; --rotation: 2"></div>
+    <div class="bear-grid__cell" style="--x: 5; --y: 15; --destinationY: 63; --destinationX: 279; --rotation: 160"></div>
+    <div class="bear-grid__cell" style="--x: 6; --y: 15; --destinationY: 79; --destinationX: 459; --rotation: 234"></div>
+    <div class="bear-grid__cell" style="--x: 7; --y: 15; --destinationY: 255; --destinationX: 367; --rotation: 287"></div>
+    <div class="bear-grid__cell" style="--x: 8; --y: 15; --destinationY: 87; --destinationX: 57; --rotation: 121"></div>
+    <div class="bear-grid__cell" style="--x: 9; --y: 15; --destinationY: 153; --destinationX: 40; --rotation: 96"></div>
+    <div class="bear-grid__cell" style="--x: 10; --y: 15; --destinationY: 144; --destinationX: 348; --rotation: 272"></div>
+    <div class="bear-grid__cell" style="--x: 11; --y: 15; --destinationY: 156; --destinationX: 251; --rotation: 58"></div>
+    <div class="bear-grid__cell" style="--x: 12; --y: 15; --destinationY: 133; --destinationX: 272; --rotation: 162"></div>
+    <div class="bear-grid__cell" style="--x: 13; --y: 15; --destinationY: 59; --destinationX: 25; --rotation: 48"></div>
+    <div class="bear-grid__cell" style="--x: 14; --y: 15; --destinationY: 28; --destinationX: 295; --rotation: 246"></div>
+    <div class="bear-grid__cell" style="--x: 0; --y: 16; --destinationY: 407; --destinationX: 12; --rotation: 102"></div>
+    <div class="bear-grid__cell" style="--x: 1; --y: 16; --destinationY: 318; --destinationX: 423; --rotation: 266"></div>
+    <div class="bear-grid__cell" style="--x: 2; --y: 16; --destinationY: 337; --destinationX: 99; --rotation: 102"></div>
+    <div class="bear-grid__cell" style="--x: 3; --y: 16; --destinationY: 396; --destinationX: 395; --rotation: 339"></div>
+    <div class="bear-grid__cell" style="--x: 4; --y: 16; --destinationY: 115; --destinationX: 18; --rotation: 315"></div>
+    <div class="bear-grid__cell" style="--x: 5; --y: 16; --destinationY: 166; --destinationX: 451; --rotation: 278"></div>
+    <div class="bear-grid__cell" style="--x: 6; --y: 16; --destinationY: 257; --destinationX: 235; --rotation: 185"></div>
+    <div class="bear-grid__cell" style="--x: 7; --y: 16; --destinationY: 439; --destinationX: 290; --rotation: 73"></div>
+    <div class="bear-grid__cell" style="--x: 8; --y: 16; --destinationY: 233; --destinationX: 498; --rotation: 130"></div>
+    <div class="bear-grid__cell" style="--x: 9; --y: 16; --destinationY: 353; --destinationX: 299; --rotation: 339"></div>
+    <div class="bear-grid__cell" style="--x: 10; --y: 16; --destinationY: 492; --destinationX: 489; --rotation: 166"></div>
+    <div class="bear-grid__cell" style="--x: 11; --y: 16; --destinationY: 256; --destinationX: 86; --rotation: 211"></div>
+    <div class="bear-grid__cell" style="--x: 12; --y: 16; --destinationY: 464; --destinationX: 44; --rotation: 152"></div>
+    <div class="bear-grid__cell" style="--x: 13; --y: 16; --destinationY: 476; --destinationX: 444; --rotation: 141"></div>
+    <div class="bear-grid__cell" style="--x: 14; --y: 16; --destinationY: 3; --destinationX: 163; --rotation: 58"></div>
+    <div class="bear-grid__cell" style="--x: 0; --y: 17; --destinationY: 93; --destinationX: 254; --rotation: 296"></div>
+    <div class="bear-grid__cell" style="--x: 1; --y: 17; --destinationY: 286; --destinationX: 217; --rotation: 231"></div>
+    <div class="bear-grid__cell" style="--x: 2; --y: 17; --destinationY: 231; --destinationX: 198; --rotation: 73"></div>
+    <div class="bear-grid__cell" style="--x: 3; --y: 17; --destinationY: 348; --destinationX: 337; --rotation: 54"></div>
+    <div class="bear-grid__cell" style="--x: 4; --y: 17; --destinationY: 179; --destinationX: 91; --rotation: 171"></div>
+    <div class="bear-grid__cell" style="--x: 5; --y: 17; --destinationY: 392; --destinationX: 114; --rotation: 285"></div>
+    <div class="bear-grid__cell" style="--x: 6; --y: 17; --destinationY: 450; --destinationX: 337; --rotation: 133"></div>
+    <div class="bear-grid__cell" style="--x: 7; --y: 17; --destinationY: 434; --destinationX: 259; --rotation: 218"></div>
+    <div class="bear-grid__cell" style="--x: 8; --y: 17; --destinationY: 305; --destinationX: 459; --rotation: 138"></div>
+    <div class="bear-grid__cell" style="--x: 9; --y: 17; --destinationY: 487; --destinationX: 427; --rotation: 222"></div>
+    <div class="bear-grid__cell" style="--x: 10; --y: 17; --destinationY: 37; --destinationX: 390; --rotation: 172"></div>
+    <div class="bear-grid__cell" style="--x: 11; --y: 17; --destinationY: 221; --destinationX: 274; --rotation: 68"></div>
+    <div class="bear-grid__cell" style="--x: 12; --y: 17; --destinationY: 425; --destinationX: 484; --rotation: 134"></div>
+    <div class="bear-grid__cell" style="--x: 13; --y: 17; --destinationY: 435; --destinationX: 412; --rotation: 251"></div>
+    <div class="bear-grid__cell" style="--x: 14; --y: 17; --destinationY: 267; --destinationX: 348; --rotation: 28"></div>
+    <div class="bear-grid__cell" style="--x: 0; --y: 18; --destinationY: 25; --destinationX: 158; --rotation: 80"></div>
+    <div class="bear-grid__cell" style="--x: 1; --y: 18; --destinationY: 381; --destinationX: 88; --rotation: 65"></div>
+    <div class="bear-grid__cell" style="--x: 2; --y: 18; --destinationY: 366; --destinationX: 309; --rotation: 242"></div>
+    <div class="bear-grid__cell" style="--x: 3; --y: 18; --destinationY: 159; --destinationX: 7; --rotation: 259"></div>
+    <div class="bear-grid__cell" style="--x: 4; --y: 18; --destinationY: 244; --destinationX: 300; --rotation: 315"></div>
+    <div class="bear-grid__cell" style="--x: 5; --y: 18; --destinationY: 439; --destinationX: 379; --rotation: 345"></div>
+    <div class="bear-grid__cell" style="--x: 6; --y: 18; --destinationY: 450; --destinationX: 373; --rotation: 266"></div>
+    <div class="bear-grid__cell" style="--x: 7; --y: 18; --destinationY: 153; --destinationX: 493; --rotation: 217"></div>
+    <div class="bear-grid__cell" style="--x: 8; --y: 18; --destinationY: 38; --destinationX: 341; --rotation: 36"></div>
+    <div class="bear-grid__cell" style="--x: 9; --y: 18; --destinationY: 362; --destinationX: 127; --rotation: 19"></div>
+    <div class="bear-grid__cell" style="--x: 10; --y: 18; --destinationY: 352; --destinationX: 454; --rotation: 3"></div>
+    <div class="bear-grid__cell" style="--x: 11; --y: 18; --destinationY: 62; --destinationX: 202; --rotation: 186"></div>
+    <div class="bear-grid__cell" style="--x: 12; --y: 18; --destinationY: 223; --destinationX: 293; --rotation: 119"></div>
+    <div class="bear-grid__cell" style="--x: 13; --y: 18; --destinationY: 276; --destinationX: 337; --rotation: 132"></div>
+    <div class="bear-grid__cell" style="--x: 14; --y: 18; --destinationY: 173; --destinationX: 121; --rotation: 212"></div>
+    <div class="bear-grid__cell" style="--x: 0; --y: 19; --destinationY: 15; --destinationX: 104; --rotation: 322"></div>
+    <div class="bear-grid__cell" style="--x: 1; --y: 19; --destinationY: 186; --destinationX: 297; --rotation: 188"></div>
+    <div class="bear-grid__cell" style="--x: 2; --y: 19; --destinationY: 264; --destinationX: 177; --rotation: 86"></div>
+    <div class="bear-grid__cell" style="--x: 3; --y: 19; --destinationY: 150; --destinationX: 337; --rotation: 304"></div>
+    <div class="bear-grid__cell" style="--x: 4; --y: 19; --destinationY: 419; --destinationX: 408; --rotation: 211"></div>
+    <div class="bear-grid__cell" style="--x: 5; --y: 19; --destinationY: 229; --destinationX: 466; --rotation: 262"></div>
+    <div class="bear-grid__cell" style="--x: 6; --y: 19; --destinationY: 358; --destinationX: 158; --rotation: 237"></div>
+    <div class="bear-grid__cell" style="--x: 7; --y: 19; --destinationY: 41; --destinationX: 470; --rotation: 356"></div>
+    <div class="bear-grid__cell" style="--x: 8; --y: 19; --destinationY: 116; --destinationX: 254; --rotation: 257"></div>
+    <div class="bear-grid__cell" style="--x: 9; --y: 19; --destinationY: 69; --destinationX: 139; --rotation: 100"></div>
+    <div class="bear-grid__cell" style="--x: 10; --y: 19; --destinationY: 368; --destinationX: 157; --rotation: 320"></div>
+    <div class="bear-grid__cell" style="--x: 11; --y: 19; --destinationY: 489; --destinationX: 177; --rotation: 267"></div>
+    <div class="bear-grid__cell" style="--x: 12; --y: 19; --destinationY: 79; --destinationX: 158; --rotation: 327"></div>
+    <div class="bear-grid__cell" style="--x: 13; --y: 19; --destinationY: 386; --destinationX: 208; --rotation: 29"></div>
+    <div class="bear-grid__cell" style="--x: 14; --y: 19; --destinationY: 180; --destinationX: 320; --rotation: 309"></div>
+</div>
+<script>
+    const bearGrid = document.querySelector('.bear-grid')
+const bearCells = bearGrid.querySelectorAll('.bear-grid__cell')
+const lastCell = bearCells[bearCells.length - 1]
+const replay = document.querySelector('.replay')
+
+
+const imageHasLoaded = (src) => new Promise((resolve, reject) => {
+  const img = new Image()
+  img.onload = resolve
+  img.onerror = reject
+  img.src = src
+})
+
+const showReset = () => {
+  bearGrid.classList.toggle('bear-grid--fading')
+  replay.classList.toggle('replay--show')
+}
+
+const fade = () => {
+  replay.classList.toggle('replay--show')
+  bearGrid.classList.toggle('bear-grid--fading')
+}
+
+
+lastCell.addEventListener('animationend', showReset)
+replay.addEventListener('click', fade)
+
+imageHasLoaded('https://jh3y-bear-doesnt-feel-good.netlify.com/dontfeelgoodbear.svg')
+  .then(() => {
+    bearGrid.classList.toggle('bear-grid--fading')
+  })
+</script>
+</body>
+</html>

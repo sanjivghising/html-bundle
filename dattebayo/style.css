@@ -1,0 +1,1248 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    user-select: none;
+}
+*:focus {
+    outline: none;
+}
+body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+    background: radial-gradient(at bottom center, #fff 1 10%, transparent 60%), linear-gradient(90deg, #000 4 10%, #fff 2 40% 60%, #000 4 90%);
+    background-color: #4e3126;
+}
+.container {
+    height: 533px;
+    width: 600px;
+    position: relative;
+}
+.container .ball {
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    top: 52px;
+    left: 83px;
+    border-radius: 50%;
+    animation: fly 2s ease-in-out infinite alternate;
+    background: radial-gradient(at 30% 30%, #666 2 20%, #000 0), radial-gradient(at 30% 30%, #444 3 70%, #000 0), radial-gradient(black 60%, #fff 100%);
+}
+.container .ball:nth-child(2) {
+    top: 293px;
+    left: 0;
+}
+.container .ball:nth-child(3) {
+    top: 120px;
+    left: 511px;
+}
+.container .ball:nth-child(4) {
+    top: 359px;
+    left: 524px;
+}
+.container .ball:nth-child(5) {
+    top: -90px;
+    left: 320px;
+}
+.container .naruto {
+    height: 507px;
+    width: 417px;
+    position: absolute;
+    top: 26px;
+    left: 93px;
+    animation: flame 3s 5s ease-in-out infinite alternate;
+    filter: drop-shadow(0 0 1px #f39637) drop-shadow(0 0 3px #f39637) drop-shadow(0 0 6px #f39637) drop-shadow(0 0 9px #f4f095);
+}
+.container .naruto .head {
+    height: 214px;
+    width: 155px;
+    position: absolute;
+    top: 0;
+    left: 194px;
+}
+.container .naruto .head .hair {
+    height: 52px;
+    width: 116px;
+    position: absolute;
+    top: 39px;
+    left: 19px;
+    background: #f4f095;
+}
+.container .naruto .head .hair .lock-1 {
+    height: 25px;
+    width: 18px;
+    position: absolute;
+    bottom: 4px;
+    left: -18px;
+    overflow: hidden;
+}
+.container .naruto .head .hair .lock-1::after {
+    height: 76px;
+    width: 51px;
+    content: "";
+    position: absolute;
+    top: -70px;
+    left: -11px;
+    box-shadow: 9px 17px #f4f095;
+    border-radius: 50%;
+}
+.container .naruto .head .hair .lock-2 {
+    height: 42px;
+    width: 10px;
+    position: absolute;
+    top: -19px;
+    left: -3px;
+    background: #f4f095;
+    border-radius: 0 10px;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 30% 100%, 0 50%);
+}
+.container .naruto .head .hair .lock-3, .container .naruto .head .hair .lock-6 {
+    height: 88px;
+    width: 20px;
+    position: absolute;
+    top: -40px;
+    left: 5px;
+    background: #f4f095;
+    border-radius: 50%;
+    clip-path: polygon(40% 15%, 49% 0, 200% 0, 100% 200%, 5% 200%, 5% 37%, 20% 26%);
+}
+.container .naruto .head .hair .lock-3::after, .container .naruto .head .hair .lock-6::after {
+    height: 20px;
+    width: 20px;
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 10px;
+    transform: rotate(-50deg);
+    background: #f4f095;
+}
+.container .naruto .head .hair .lock-4 {
+    height: 59px;
+    width: 41px;
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    background: #f4f095;
+    border-radius: 50%;
+    clip-path: polygon(0 0, 22% 0%, 29% 20%, 49% 43%, 65% 17%, 73% 0, 100% 0, 100% 100%, 0 100%);
+}
+.container .naruto .head .hair .lock-5 {
+    height: 59px;
+    width: 30px;
+    position: absolute;
+    top: -26px;
+    left: 70px;
+    background: #f4f095;
+    border-radius: 0 20px;
+    clip-path: polygon(43% 0, 100% 0, 100% 100%, 0 100%, 0 46%, 33% 36%, 43% 15%);
+}
+.container .naruto .head .hair .lock-6 {
+    top: -35px;
+    left: 103px;
+    transform: scalex(-1);
+}
+.container .naruto .head .hair .lock-7 {
+    height: 40px;
+    width: 18px;
+    position: absolute;
+    bottom: 4px;
+    right: -18px;
+}
+.container .naruto .head .hair .lock-7::before {
+    height: 40px;
+    width: 10px;
+    content: "";
+    position: absolute;
+    top: -26px;
+    left: -4px;
+    transform: rotate(15deg) skewy(20deg);
+    background: #f4f095;
+    border-radius: 0 20Array/0Array 40px;
+}
+.container .naruto .head .hair .lock-7::after {
+    height: 66px;
+    width: 61px;
+    content: "";
+    position: absolute;
+    top: -45px;
+    right: 7px;
+    box-shadow: 5px 20px #f4f095;
+    border-radius: 50%;
+}
+.container .naruto .head .hair .lock-8 {
+    height: 15px;
+    width: 11px;
+    position: absolute;
+    bottom: -85px;
+    left: -2px;
+    overflow: hidden;
+    z-index: -1;
+}
+.container .naruto .head .hair .lock-8::after {
+    height: 30px;
+    width: 11px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 8px;
+    border-radius: 50%;
+    box-shadow: 6px -1px #f39637;
+}
+.container .naruto .head .hair .lock-9 {
+    height: 32px;
+    width: 8px;
+    content: "";
+    position: absolute;
+    position: absolute;
+    bottom: -100px;
+    left: 6px;
+    background: #f39637;
+    clip-path: polygon(0 0, 0 34%, 40% 100%, 95% 51%, 100% 0%);
+    z-index: -1;
+}
+.container .naruto .head .hair .lock-10 {
+    height: 61px;
+    width: 17px;
+    content: "";
+    position: absolute;
+    position: absolute;
+    bottom: -100px;
+    right: 7px;
+    background: #f39637;
+    border-radius: 50%;
+    clip-path: polygon(0 0, 11% 100%, 46% 100%, 45% 81%, 60% 69%, 97% 94%, 100% 0%);
+    z-index: -1;
+}
+.container .naruto .head .face {
+    height: 172px;
+    width: 103px;
+    position: absolute;
+    bottom: 0;
+    left: 24px;
+    background: #f9e6ce;
+    border-radius: 50%;
+}
+.container .naruto .head .face .ear {
+    height: 39px;
+    width: 15px;
+    position: absolute;
+    top: 83px;
+    right: -12px;
+    background: #f9e6ce;
+    border-radius: 50%;
+    transform: rotate(17deg);
+}
+.container .naruto .head .face .ear.left {
+    left: -12px;
+    transform: rotate(-17deg);
+}
+.container .naruto .head .face .temple {
+    height: 23px;
+    width: 10px;
+    position: absolute;
+    top: 80px;
+    right: -6px;
+    background: #f4f095;
+    clip-path: polygon(0 0, 100% 0, 100% 40%, 60% 100%, 40% 100%, 10% 60%);
+}
+.container .naruto .head .face .temple.left {
+    left: -5px;
+    transform: scalex(-1);
+}
+.container .naruto .head .line-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.container .naruto .head .line-container::after {
+    height: 76px;
+    width: 55px;
+    content: "";
+    position: absolute;
+    background: #f9e6ce;
+    top: 90px;
+    left: 24px;
+    border-radius: 50%;
+}
+.container .naruto .head .line-container .line {
+    height: 8px;
+    width: 27px;
+    position: absolute;
+    top: 123px;
+    right: 0;
+    background: #000;
+    border-radius: 0 0 3px 3px;
+    overflow: hidden;
+}
+.container .naruto .head .line-container .line::after {
+    height: 6px;
+    width: 33px;
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    border-radius: 50%;
+    background: #f9e6ce;
+}
+.container .naruto .head .line-container .line:nth-child(1) {
+    left: 0px;
+}
+.container .naruto .head .line-container .line:nth-child(2) {
+    left: 0;
+    top: 131px;
+}
+.container .naruto .head .line-container .line:nth-child(3) {
+    left: 0px;
+    top: 139px;
+}
+.container .naruto .head .line-container .line:nth-child(4) {
+    right: 0;
+    top: 131px;
+}
+.container .naruto .head .line-container .line:nth-child(5) {
+    right: 0px;
+    top: 139px;
+}
+.container .naruto .head .band-container {
+    height: 47px;
+    width: 120px;
+    position: absolute;
+    top: 82px;
+    left: 17px;
+    overflow: hidden;
+}
+.container .naruto .head .band-container .band {
+    height: 176px;
+    width: 120px;
+    position: absolute;
+    top: -63px;
+    left: 0;
+    overflow: hidden;
+    border-radius: 50%;
+    z-index: 0;
+}
+.container .naruto .head .band-container .band .logo {
+    height: 34px;
+    width: 74px;
+    position: absolute;
+    top: 68px;
+    left: 24px;
+    border: 1px solid #e9cf74;
+    border-radius: 50% / 16%;
+}
+.container .naruto .head .band-container .band .logo .dot {
+    height: 4px;
+    width: 4px;
+    position: absolute;
+    top: 3px;
+    right: 2px;
+    border: 1px solid #e9cf74;
+    border-radius: 50%;
+}
+.container .naruto .head .band-container .band .logo .dot.left {
+    left: 2px;
+}
+.container .naruto .head .band-container .band .logo .dot:nth-child(2), .container .naruto .head .band-container .band .logo .dot:nth-child(5) {
+    top: 13px;
+}
+.container .naruto .head .band-container .band .logo .dot:nth-child(3), .container .naruto .head .band-container .band .logo .dot:nth-child(6) {
+    top: 22px;
+}
+.container .naruto .head .band-container .band .logo .leaf-container {
+    filter: drop-shadow(0 0 2px #e9cf74);
+}
+.container .naruto .head .band-container .band .logo .leaf-container .leaf {
+    height: 19px;
+    width: 28px;
+    position: absolute;
+    top: 5px;
+    left: 22px;
+    background: #f4f095;
+    border-radius: 28px 0 28px 0;
+    clip-path: polygon(0 0, 0 100%, 32% 100%, 31.75% 85.19%, 21% 84%, 14% 73%, 18% 50%, 26% 70%, 32% 86%, 32% 100%, 50% 100%, 78% 83%, 79% 51%, 61% 26%, 47% 33%, 46% 47%, 47% 59%, 60% 65%, 56% 43%, 69% 46.68%, 70% 73%, 57% 80%, 42% 76%, 28% 60%, 26% 39%, 42% 22%, 57% 15%, 71% 16%, 86% 26%, 100% 21%, 100% 0, 86% 10%, 72% 0);
+}
+.container .naruto .head .band-container .band::after {
+    height: 47px;
+    width: 188px;
+    content: "";
+    position: absolute;
+    top: 62px;
+    left: -31px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #f39637 10%, #f4f095 35% 65%, #f39637 90%);
+    z-index: -1;
+}
+.container .naruto .head .eye {
+    height: 17px;
+    width: 25px;
+    position: absolute;
+    top: 90px;
+    right: 13px;
+    border-radius: 51% 50% 49% 52% / 75% 20% 80% 22%;
+    background: #fff;
+    overflow: hidden;
+    animation: blink2 6s infinite linear;
+}
+.container .naruto .head .eye::after {
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    background: #f9e6ce;
+    border-radius: 51% 50% 49% 52% / 75% 20% 80% 22%;
+    border-bottom: 2px solid black;
+    animation: blink 6s infinite linear;
+}
+.container .naruto .head .eye .iris {
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: -1px;
+    left: 5px;
+    border-radius: 50%;
+    background: radial-gradient(#f4f095 20%, #f39637 100%);
+    border: 1px solid #000 6;
+    opacity: 0.8;
+}
+.container .naruto .head .eye .iris::after {
+    height: 7px;
+    width: 1px;
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    background: #000;
+}
+.container .naruto .head .eye .iris::before {
+    height: 2px;
+    width: 7px;
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    background: #000;
+}
+.container .naruto .head .eye.left {
+    transform: scalex(-1);
+    left: 13px;
+}
+.container .naruto .head .nouse {
+    height: 13px;
+    width: 15px;
+    position: absolute;
+    top: 123px;
+    left: 45px;
+    border-radius: 50% 50% 50% 50% / 70% 70% 30% 30%;
+    background: #333 1;
+}
+.container .naruto .head .nouse::after, .container .naruto .head .nouse::before {
+    height: 4px;
+    width: 4px;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: #333 1;
+    top: 7px;
+    right: 2px;
+}
+.container .naruto .head .nouse::before {
+    left: 2px;
+}
+.container .naruto .head .mouth {
+    height: 14px;
+    width: 30px;
+    position: absolute;
+    top: 140px;
+    left: 37px;
+    border-radius: 19% 19% 15% 15% / 70% 70% 30% 30%;
+    border: 1px solid #d7c9b3;
+    background: #fff;
+    overflow: hidden;
+    animation: close 13s linear forwards;
+}
+.container .naruto .head .mouth::before {
+    height: 100%;
+    width: 150%;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 1px dotted #d7c9b3;
+    top: -5px;
+    left: -8px;
+}
+.container .naruto .head .mouth::after {
+    height: 5px;
+    width: 12px;
+    content: "";
+    position: absolute;
+    background: #fff;
+    top: 3px;
+    left: 8px;
+}
+.container .naruto .neck {
+    height: 39px;
+    width: 70px;
+    position: absolute;
+    top: 172px;
+    left: 225px;
+    background: #d7c9b3;
+    border-radius: 0% 0% 24% 76% / 0% 0% 19% 55%;
+    z-index: -1;
+}
+.container .naruto .collar {
+    height: 97px;
+    width: 176px;
+    position: absolute;
+    top: 155px;
+    left: 173px;
+    z-index: -2;
+}
+.container .naruto .collar .left {
+    height: 82px;
+    width: 28px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(270deg, #f39637 2%, #f4f095 45%);
+    border-radius: 100% 0% 0% 100% / 25% 0% 0% 75%;
+    clip-path: polygon(0 3%, 0% 98%, 100% 100%, 100% 100%, 90% 73%, 90% 29%, 100% 0);
+}
+.container .naruto .collar .right {
+    height: 82px;
+    width: 60px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #373736;
+    border-radius: 96% 4% 0% 100% / 34% 3% 0% 0%;
+    clip-path: polygon(0 100%, 55% 100%, 77% 63%, 88% 37%, 100% 0, 0 0);
+}
+.container .naruto .collar .right::after {
+    height: 166px;
+    width: 102px;
+    content: "";
+    position: absolute;
+    background: #000;
+    border-radius: 50%;
+    top: -56px;
+    left: -88px;
+}
+.container .naruto .collar .back {
+    height: 79px;
+    width: 110px;
+    position: absolute;
+    top: 13px;
+    left: 19px;
+    overflow: hidden;
+}
+.container .naruto .collar .back::after {
+    height: 177px;
+    width: 335px;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    top: -171px;
+    left: -109px;
+    box-shadow: 0 79px #000;
+}
+.container .naruto .collar .front {
+    height: 48px;
+    width: 104px;
+    position: absolute;
+    bottom: 0;
+    left: 17px;
+    border-radius: 0 0 30px 0;
+    background: #373736;
+    box-shadow: -3px 27px #000;
+    overflow: hidden;
+}
+.container .naruto .collar .front::after {
+    height: 87px;
+    width: 99px;
+    content: "";
+    position: absolute;
+    background: #000;
+    border-radius: 50%;
+    top: -56px;
+    left: 24px;
+}
+.container .naruto .collar .front::before {
+    height: 30px;
+    width: 30px;
+    content: "";
+    position: absolute;
+    background: #373736;
+    border-radius: 50%;
+    bottom: 4px;
+    left: 1px;
+    box-shadow: -5px -27px #000;
+}
+.container .naruto .body {
+    height: 293px;
+    width: 423px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.container .naruto .body .chest {
+    height: 256px;
+    width: 174px;
+    position: absolute;
+    bottom: 0;
+    left: 173px;
+    border-radius: 0 29px 0 0;
+    background: #373736;
+}
+.container .naruto .body .chest::after {
+    height: 22px;
+    width: 20px;
+    content: "";
+    position: absolute;
+    background: #373736;
+    left: 98px;
+    top: -18px;
+    transform: rotate(-8deg);
+    border-radius: 20px 0 25px 0;
+}
+.container .naruto .body .chest .seed {
+    height: 17px;
+    width: 17px;
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    border: 5px solid #f4f095;
+    border-radius: 50%;
+}
+.container .naruto .body .chest .seed::after {
+    height: 12px;
+    width: 7px;
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    background: #f4f095;
+    border-radius: 5px 0 12px 0;
+    clip-path: polygon(14% 48%, 0 100%, 71% 50%, 100% 10%);
+}
+.container .naruto .body .chest .seed:nth-child(1) {
+    top: 6px;
+    left: 30px;
+}
+.container .naruto .body .chest .seed:nth-child(3) {
+    top: 25px;
+    left: 118px;
+}
+.container .naruto .body .chest .circle {
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    bottom: 20px;
+    left: 44px;
+    border: 13px solid #f4f095;
+    border-radius: 50%;
+}
+.container .naruto .body .jacket:nth-child(1) {
+    height: 272px;
+    width: 116px;
+    position: absolute;
+    bottom: 0;
+    right: -4px;
+    clip-path: polygon(0 0, 0 68%, 15% 68%, 32% 100%, 100% 100%, 91% 79%, 76% 60%, 75% 52%, 71% 45%, 71% 0);
+    z-index: 1;
+}
+.container .naruto .body .jacket:nth-child(1) .left {
+    height: 184px;
+    width: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.container .naruto .body .jacket:nth-child(1) .left::after {
+    height: 289px;
+    width: 138px;
+    content: "";
+    position: absolute;
+    top: -51px;
+    left: 1px;
+    border-radius: 50%;
+    background: linear-gradient(104deg, #f39637 5%, transparent 19%), linear-gradient(85deg, #f39637 4%, #f4f095 16%);
+}
+.container .naruto .body .jacket:nth-child(1) .right {
+    height: 122px;
+    width: 65px;
+    position: absolute;
+    top: 0;
+    left: 18px;
+    overflow: hidden;
+}
+.container .naruto .body .jacket:nth-child(1) .right::after {
+    height: 25px;
+    width: 15px;
+    content: "";
+    position: absolute;
+    right: 2px;
+    bottom: -6px;
+    background: #f4f095;
+    transform: rotate(-5deg);
+    border-radius: 50%;
+}
+.container .naruto .body .jacket:nth-child(1) .right::before {
+    height: 20px;
+    width: 10px;
+    content: "";
+    position: absolute;
+    right: 26px;
+    top: 54px;
+    background: #000;
+    transform: skewx(5deg);
+    z-index: 6;
+}
+.container .naruto .body .jacket:nth-child(1) .right .shouder {
+    height: 200px;
+    width: 137px;
+    position: absolute;
+    top: -1px;
+    left: -80px;
+    border-radius: 50%;
+    background: #f4f095;
+    overflow: hidden;
+}
+.container .naruto .body .jacket:nth-child(1) .right .shouder::after {
+    height: 79px;
+    width: 33px;
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 25px;
+    transform: rotate(-5deg);
+    border-radius: 50%;
+    border: 12px solid #000;
+}
+.container .naruto .body .jacket:nth-child(1) .right .shouder::before {
+    height: 48px;
+    width: 16px;
+    content: "";
+    position: absolute;
+    right: -8px;
+    top: 39px;
+    background: #000;
+    border-radius: 50%;
+}
+.container .naruto .body .jacket:nth-child(1) .bottom {
+    height: 150px;
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(70deg, #f39637 15%, #f4f095 30%);
+}
+.container .naruto .body .jacket:nth-child(1) .bottom::after {
+    height: 140px;
+    width: 1px;
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 10px;
+    box-shadow: 0 0 6px 1px #f39637;
+    z-index: 5;
+    transform: rotate(-5deg);
+    background: #e9cf74;
+}
+.container .naruto .body .jacket:nth-child(1) .bottom::before {
+    height: 70px;
+    width: 1px;
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    box-shadow: 0 0 6px 1px #f39637;
+    transform: rotate(5deg);
+    background: #e9cf74;
+}
+.container .naruto .body .jacket:nth-child(2) {
+    height: 292px;
+    width: 212px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.container .naruto .body .jacket:nth-child(2) .right {
+    height: 281px;
+    width: 53px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 50px 0 0 0;
+    z-index: 2;
+    overflow: hidden;
+}
+.container .naruto .body .jacket:nth-child(2) .right::after {
+    height: 380px;
+    width: 134px;
+    content: "";
+    position: absolute;
+    top: -75px;
+    right: 0;
+    border-radius: 50%;
+    background: radial-gradient(#f4f095 60%, #f39637 75%);
+}
+.container .naruto .body .jacket:nth-child(2) .left {
+    height: 215px;
+    width: 69px;
+    position: absolute;
+    bottom: 0;
+    left: 90px;
+    overflow: hidden;
+}
+.container .naruto .body .jacket:nth-child(2) .left::after {
+    height: 294px;
+    width: 164px;
+    content: "";
+    position: absolute;
+    top: -69px;
+    left: -107px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px #f39637, 100px 60px #f4f095;
+}
+.container .naruto .body .jacket:nth-child(2) .shoulder {
+    height: 87px;
+    width: 88px;
+    position: absolute;
+    top: 3px;
+    left: 100px;
+    background: #f4f095;
+    z-index: 2;
+    border-radius: 90px 11px 0 0;
+    overflow: hidden;
+}
+.container .naruto .body .jacket:nth-child(2) .shoulder::before {
+    height: 75px;
+    width: 69px;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    left: -24px;
+    background: radial-gradient(#000 38%, #f4f095 40% 50%, #000 53%);
+}
+.container .naruto .body .jacket:nth-child(2) .shoulder::after {
+    height: 20px;
+    width: 10px;
+    content: "";
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    background: #000;
+    transform: rotate(30deg) skewx(15deg);
+}
+.container .naruto .body .jacket:nth-child(2) .arm {
+    height: 133px;
+    width: 145px;
+    position: absolute;
+    bottom: 95px;
+    left: 40px;
+    Z-index: 2;
+}
+.container .naruto .body .jacket:nth-child(2) .arm .top {
+    height: 103px;
+    width: 72px;
+    position: absolute;
+    top: 13px;
+    left: 50px;
+    border-radius: 0 0 50px 0;
+    overflow: hidden;
+    box-shadow: 18px 2px 10px -16px #f39637;
+}
+.container .naruto .body .jacket:nth-child(2) .arm .top::after {
+    height: 107px;
+    width: 87px;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    top: -18px;
+    background: #f4f095;
+    z-index: -1;
+}
+.container .naruto .body .jacket:nth-child(2) .arm .top::before {
+    height: 64px;
+    width: 60px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 40px;
+    background: #f4f095;
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom {
+    height: 86px;
+    width: 90px;
+    position: absolute;
+    bottom: -30px;
+    left: 0px;
+    border-radius: 50%;
+    background: #f4f095;
+    box-shadow: 12px -32px 0 -18px #f4f095, -23px 3px 0 -18px #f4f095, 20px -5px 10px -20px #f39637;
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom::after {
+    height: 86px;
+    width: 36px;
+    content: "";
+    position: absolute;
+    left: 45px;
+    top: -50px;
+    transform: rotate(-8deg);
+    background: #f4f095;
+    border-radius: 50%;
+    z-index: -1;
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom::before {
+    height: 50px;
+    width: 20px;
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 0;
+    transform: rotate(30deg);
+    background: #f4f095;
+    z-index: -1;
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom .sleeve {
+    height: 106px;
+    width: 116px;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: #000;
+    clip-path: polygon(7% 18%, 7% 28%, 1% 36%, 6% 37%, 0 48%, 6% 50%, 14% 70%, 15% 85%, 23% 76%, 47% 96%, 44% 83%, 73% 78%, 93% 61%, 90% 55%, 93% 47%, 87% 32%, 86% 18%, 74% 25%, 55% 22%, 49% 7%, 38% 14%, 34% 2%, 27% 14%);
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom .glove {
+    height: 40px;
+    width: 106px;
+    position: absolute;
+    top: 60px;
+    left: -50px;
+    transform: rotate(20deg);
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom .glove::after {
+    height: 37px;
+    width: 67px;
+    content: "";
+    position: absolute;
+    right: 5px;
+    top: 1px;
+    background: #373736;
+    border-radius: 50%;
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom .glove::before {
+    height: 40px;
+    width: 50px;
+    content: "";
+    position: absolute;
+    right: 0;
+    background: #373736;
+    border-radius: 50%;
+    box-shadow: -35px 0 #373736;
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom .glove .thumb {
+    height: 30px;
+    width: 33px;
+    position: absolute;
+    top: 6px;
+    left: 3px;
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom .glove .thumb::before {
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    background: #373736;
+    clip-path: polygon(20% 21%, 20% 63%, 100% 83%, 100% 3%);
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom .glove .thumb::after {
+    height: 20px;
+    width: 14px;
+    content: "";
+    position: absolute;
+    background: #373736;
+    border-radius: 50%;
+    transform: rotate(20deg);
+    top: 2px;
+    left: 5px;
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom .hand .palm {
+    height: 36px;
+    width: 72px;
+    position: absolute;
+    top: 74px;
+    left: -20px;
+    background: #f9e6ce;
+    transform: rotate(10deg);
+    border-radius: 17% 83% 24% 59% / 37% 79% 21% 63%;
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom .hand .palm::before {
+    height: 35px;
+    width: 50px;
+    content: "";
+    position: absolute;
+    background: #f9e6ce;
+    right: 0;
+    top: 5px;
+    border-radius: 0 40px 10px;
+    transform: rotate(-10deg);
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom .hand .palm .line {
+    height: 12px;
+    width: 34px;
+    position: absolute;
+    top: 20px;
+    left: 22px;
+    border-radius: 50%;
+    box-shadow: 0 -1px #e9cf74;
+    transform: rotate(20deg);
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom .hand .thumb {
+    height: 24px;
+    width: 16px;
+    position: absolute;
+    bottom: 17px;
+    left: -43px;
+    background: #f9e6ce;
+    border-radius: 8px;
+    transform: rotate(5deg);
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom .hand .thumb::after {
+    height: 20px;
+    width: 16px;
+    content: "";
+    position: absolute;
+    background: #f9e6ce;
+    top: -8px;
+    left: -2px;
+    transform: rotate(-20deg);
+    border-radius: 5px 8px 8px 0;
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom .hand .index {
+    height: 26px;
+    width: 14px;
+    position: absolute;
+    bottom: -15px;
+    left: -14px;
+    background: #f9e6ce;
+    border-radius: 7px;
+    transform: rotate(20deg);
+    box-shadow: -1px -5px #e9cf74, 1px -1px #e9cf74;
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom .hand .index::before {
+    height: 20px;
+    width: 14px;
+    content: "";
+    position: absolute;
+    background: #f9e6ce;
+    top: -8px;
+    left: 0;
+    transform: rotate(-10deg);
+    border-radius: 5px 7px 7px 0;
+    box-shadow: -1px -1px #e9cf74, 1px -1px #e9cf74;
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom .hand .index::after {
+    height: 9px;
+    width: 10px;
+    content: "";
+    position: absolute;
+    border-radius: 49% 51% 10% 10% / 17% 16% 10% 83%;
+    top: -5px;
+    left: 1px;
+    border: 1px solid #e9cf74;
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom .hand .middle {
+    height: 30px;
+    width: 14px;
+    position: absolute;
+    bottom: -28px;
+    left: 6px;
+    background: #f9e6ce;
+    border-radius: 7px;
+    transform: rotate(20deg);
+    box-shadow: -1px -5px #e9cf74, 1px -1px #e9cf74;
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom .hand .middle::before {
+    height: 20px;
+    width: 14px;
+    content: "";
+    position: absolute;
+    background: #f9e6ce;
+    top: -8px;
+    left: -1;
+    transform: rotate(5deg);
+    border-radius: 5px 7px 7px 0;
+    box-shadow: -1px -1px #e9cf74, 1px -1px #e9cf74;
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom .hand .middle::after {
+    height: 9px;
+    width: 10px;
+    content: "";
+    position: absolute;
+    border-radius: 49% 51% 10% 10% / 17% 16% 10% 83%;
+    top: -5px;
+    left: 1px;
+    border: 1px solid #e9cf74;
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom .hand .ring {
+    height: 27px;
+    width: 12px;
+    position: absolute;
+    bottom: -30px;
+    left: 28px;
+    background: #f9e6ce;
+    border-radius: 6px;
+    box-shadow: -1px -5px #e9cf74, 1px -1px #e9cf74;
+    transform: rotate(65deg);
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom .hand .ring::before {
+    height: 24px;
+    width: 12px;
+    content: "";
+    position: absolute;
+    background: #f9e6ce;
+    top: -8px;
+    left: -2px;
+    transform: rotate(-30deg);
+    border-radius: 5px 6px 6px 0;
+    box-shadow: -1px -1px #e9cf74, 1px -1px #e9cf74;
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom .hand .ring::after {
+    height: 9px;
+    width: 9px;
+    content: "";
+    position: absolute;
+    border-radius: 49% 51% 10% 20% / 39% 16% 10% 83%;
+    top: -6px;
+    left: -2px;
+    border: 1px solid #e9cf74;
+    transform: rotate(-30deg);
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom .hand .little {
+    height: 23px;
+    width: 10px;
+    position: absolute;
+    bottom: -33px;
+    left: 50px;
+    background: #f9e6ce;
+    border-radius: 5px;
+    box-shadow: -1px -5px #e9cf74, 1px -1px #e9cf74;
+    transform: rotate(75deg);
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom .hand .little::before {
+    height: 24px;
+    width: 10px;
+    content: "";
+    position: absolute;
+    background: #f9e6ce;
+    top: -8px;
+    left: -2px;
+    transform: rotate(-35deg);
+    border-radius: 5px 5px 5px 0;
+    box-shadow: -1px -1px #e9cf74, 1px -1px #e9cf74;
+}
+.container .naruto .body .jacket:nth-child(2) .arm .bottom .hand .little::after {
+    height: 8px;
+    width: 8px;
+    content: "";
+    position: absolute;
+    border-radius: 49% 51% 10% 20% / 39% 16% 10% 83%;
+    top: -6px;
+    left: -2px;
+    border: 1px solid #e9cf74;
+    transform: rotate(-35deg);
+}
+.container .rasengan {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 270px;
+    left: 80px;
+    border-radius: 50%;
+    background: radial-gradient(white 3%, #86b9e4 36% 40%, transparent 43% 59%, rgba(134, 185, 228, .3) 60%, transparent 70%);
+    animation: rasengan-create 3s 7s linear forwards, rasengan-brightness 4s linear infinite alternate, rasengan-fly 2s 10s linear infinite alternate;
+    transform: scale(0);
+    z-index: 4;
+}
+@media screen and (max-width: 700px) {
+    .container {
+        transform: scale(0.5);
+        transform-origin: bottom;
+   }
+}
+@keyframes fly {
+    from {
+        transform: translatey(-8%);
+   }
+    to {
+        transform: translatey(8%);
+   }
+}
+@keyframes blink {
+    0%, 60%, 64%, 100% {
+        transform: translatey(-100%);
+   }
+    61% {
+        transform: translatey(0%);
+   }
+}
+@keyframes blink2 {
+    0%, 60%, 64%, 100% {
+        box-shadow: 2px -2px #000;
+   }
+    62% {
+        box-shadow: none;
+   }
+}
+@keyframes close {
+    0%, 50% {
+        transform: scalex(0.5) scaley(0.05);
+   }
+    55% {
+        transform: scalex(0.8) scaley(0.7);
+   }
+    80%, 100% {
+        transform: scalex(1) scaley(1);
+   }
+}
+@keyframes flame {
+    to {
+        filter: drop-shadow(0 0 9px #f39637) drop-shadow(0 0 18px #f39637) drop-shadow(0 0 27px #f39637) drop-shadow(0 0 36px #f4f095);
+   }
+}
+@keyframes rasengan-create {
+    to {
+        transform: scale(1);
+   }
+}
+@keyframes rasengan-brightness {
+    0%, 100% {
+        background: radial-gradient(white 3%, #86b9e4 36% 40%, transparent 43% 59%, rgba(134, 185, 228, .3) 60%, transparent 70%);
+   }
+    25%, 75% {
+        background: radial-gradient(white 3%, #86b9e4 36% 40%, transparent 43% 59%, rgba(134, 185, 228, .2) 60%, transparent 70%);
+   }
+    45%, 55% {
+        background: radial-gradient(white 3%, #86b9e4 36% 40%, transparent 43% 59%, rgba(134, 185, 228, .1) 60%, transparent 70%);
+   }
+    50% {
+        background: radial-gradient(white 3%, #86b9e4 36% 40%, transparent 43% 59%, rgba(134, 185, 228, .0) 60%, transparent 70%);
+   }
+}
+@keyframes rasengan-fly {
+    from {
+        transform: translatey(0%);
+   }
+    to {
+        transform: translatey(4%);
+   }
+}
